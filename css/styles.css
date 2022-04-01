@@ -17,7 +17,7 @@ body {
   letter-spacing: 0.03em;
 }
 .conteiner {
-     width: 1200px;
+    width: 1200px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -91,15 +91,25 @@ a {
     color: var(--accent, #2196f3);
 }
 /* Герой */
-.hero, .footer {
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    background-size: cover;
+}
+.footer {
     background-color: var(--bcg-color-hero, ##2f303a);
-    color: var(--white, #ffffff)
+    /* color: var(--white, #ffffff) */
 }
 .hero-title {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto; 
     width: 696px;   
+    color: #ffffff;
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
@@ -194,6 +204,44 @@ border-radius: 0px 0px 4px 4px;
 }
 .comand > .item:not(:last-child) {
     margin-right: 30px;
+}
+/* Соціальні мережі */
+.social-list {
+    display: flex;
+    margin: 16px 30px 0 30px;
+    
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #AFB1B8;
+   }
+
+.social-link-item:not(:last-child) {
+margin-right: 10px;
+}
+.social-icon {
+fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+background-color: #2196f3;
+color: #fff;
+}
+
+/* Постійнеі клієнти */
+.clients-list {
+    display: flex;
+}
+.clients-item{
+
 }
 /* Підвал */
 .footer {
