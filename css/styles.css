@@ -36,7 +36,7 @@ a {
 }
 /* Шапка */
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header .conteiner {
     display: flex;
@@ -116,6 +116,7 @@ a {
     margin-right: auto; 
     width: 696px;   
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
@@ -168,9 +169,6 @@ text-align: center;
 .features {
     display: flex;
 }
-.features > .item {
-    width: 270px;
-}
 .features > .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -178,9 +176,9 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
